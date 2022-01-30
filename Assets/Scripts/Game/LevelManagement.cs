@@ -41,7 +41,8 @@ public class LevelManagement : MonoBehaviour
 		difficulty = PlayerPrefs.GetString("gameDifficulty");
 		//loadedLevels = (difficulty == "EasyGame") ? levelList.easy : levelList.hard;
 		givenTxt.enabled = (PlayerPrefs.GetString("helpTextVisibilty") == "true");
-		progressBar.SetActive((PlayerPrefs.GetString("helpTextVisibilty") == "true"));
+		progressBar.SetActive((PlayerPrefs.GetString("helpBarVisibilty") == "true"));
+
 		//maxLevel = loadedLevels.Count - 1;
 		//currentLevel = System.Math.Max(0, loadedLevels.FindIndex(NotCompleted));
 		currentLevel = 0;
@@ -61,13 +62,13 @@ public class LevelManagement : MonoBehaviour
 		if (difficulty != "EasyGame") {
     		lipe.gameObject.SetActive(true);
 			amountNumber = Random.Range(1.2f, maximumPrice);
-			amountTxt.text = "Teta prodavačica traži " + amountNumber.ToString("F2") + "kn";
+			amountTxt.text = "Potrebno je platiti " + amountNumber.ToString("F2") + "kn";
 		}
 		//amountNumber = loadedLevels[currentLevel].goalAmount;
 		else
 		{
 			amountNumber = Random.Range(1, maximumPrice);
-			amountTxt.text = "Teta prodavačica traži " + amountNumber.ToString() + "kn";
+			amountTxt.text = "Potrebno je platiti " + amountNumber.ToString() + "kn";
 		}
 		UpdateGiven(-givenNumber);
 	}
@@ -76,9 +77,9 @@ public class LevelManagement : MonoBehaviour
     {
 		givenNumber += offset;
 		if (difficulty != "EasyGame") {
-			givenTxt.text = "Za sada imaš " + givenNumber.ToString("F2") + "kn";
+			givenTxt.text = "Predao si " + givenNumber.ToString("F2") + "kn";
 		} else {
-			givenTxt.text = "Za sada imaš " + givenNumber.ToString() + "kn";
+			givenTxt.text = "Predao si " + givenNumber.ToString() + "kn";
 		}
 	}
 
@@ -122,6 +123,7 @@ public class LevelManagement : MonoBehaviour
 	void WrongAnswer()
 	{
 		audioSourceN.clip = audioClipN;
+		audioSourceN.volume = 0.3f;
 		audioSourceN.Play();
 	}
 

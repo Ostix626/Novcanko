@@ -19,6 +19,7 @@ public class StartMenu : MonoBehaviour
         SetLevelsSavePath();
         SetPlayerPref("gameDifficulty", "EasyGame");
         SetPlayerPref("helpTextVisibilty", "true");
+        SetPlayerPref("helpBarVisibilty", "true");
         SetPlayerPref("maxLevelPrice", "500");
         SetPlayerPref("highscore", "0");
 

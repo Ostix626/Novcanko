@@ -6,7 +6,7 @@ using TMPro;
 
 public class Settings : MonoBehaviour
 {
-    public Toggle hardGameToggle, helpTextToggle;
+    public Toggle hardGameToggle, helpTextToggle, helpBarToggle;
     public TMP_InputField maxPrice;
     public AudioSource audioSource;
     public AudioClip audioClip;
@@ -17,6 +17,7 @@ public class Settings : MonoBehaviour
         sound = false;
         hardGameToggle.isOn = PlayerPrefs.GetString("gameDifficulty") != "EasyGame";
         helpTextToggle.isOn = PlayerPrefs.GetString("helpTextVisibilty") == "true";
+        helpBarToggle.isOn = PlayerPrefs.GetString("helpBarVisibilty") == "true";
         maxPrice.text = PlayerPrefs.GetString("maxLevelPrice");
         
     }
@@ -29,6 +30,11 @@ public class Settings : MonoBehaviour
     public void UpdateHelpTextVisibilty(bool visible)
     {
         PlayerPrefs.SetString("helpTextVisibilty", visible ? "true" : "false");
+    }
+
+    public void UpdateHelpBarVisibilty(bool visible)
+    {
+        PlayerPrefs.SetString("helpBarVisibilty", visible ? "true" : "false");
     }
 
     public void UpdateMaxLevelPrice(string price)
