@@ -14,6 +14,8 @@ public class ShowExitScreen : MonoBehaviour
 
     public void showPanel()
     {
+        //Debug.Log(PlayerPrefs.GetString("highscore"));
+        //Debug.Log(lastLevel.text);
         if (panel.activeSelf == true)
         {
             panel.gameObject.SetActive(false);
@@ -26,6 +28,7 @@ public class ShowExitScreen : MonoBehaviour
             }
             showLevel.text = (System.Convert.ToInt32(lastLevel.text) - 1).ToString();
             highscore.text = "TVOJ OSOBNI REKORD: " + PlayerPrefs.GetString("highscore");
+            //Debug.Log(highscore.text);
             panel.gameObject.SetActive(true);
         }
     }
