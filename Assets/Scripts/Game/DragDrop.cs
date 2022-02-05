@@ -209,7 +209,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 	public void OnEndDrag(PointerEventData eventData)
 	{
 		canvasGroup.blocksRaycasts = true;
-		//int cloneNumber = checkClone(moneyName);
 		if (droppedOnSlot)
 		{
 			//play sound
@@ -234,11 +233,11 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
 	public void OnPointerDown(PointerEventData eventData)
 	{
-		//Debug.Log("OnPointerDown");
-		moneyBox.anchoredPosition = primaryPos;
+		//moneyBox.anchoredPosition = primaryPos;
 		int cloneCount = checkClone(moneyName);
 		if (droppedOnSlot)
 		{
+			moneyBox.anchoredPosition = primaryPos;
 			moneyNumber = getMoneyNumber(moneyName);
 			RemovedMoney(moneyNumber);
 		}
