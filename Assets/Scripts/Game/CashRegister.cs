@@ -7,11 +7,19 @@ public class CashRegister : MonoBehaviour, IDropHandler
 {
 	public Canvas canvas;
 	public GameObject cashBox;
+	private Collider2D collider;
+	// collider
+
+	void Start()
+    {
+		collider = GetComponent<Collider2D>(); 
+    }
 
 	public void OnDrop(PointerEventData eventData)
 	{
-		if (eventData.pointerDrag != null && !eventData.pointerDrag.GetComponent<DragDrop>().droppedOnSlot)
+		if (eventData.pointerDrag != null && !eventData.pointerDrag.GetComponent<DragDrop>().droppedOnSlot && collider.bounds.Contains(eventData.position))
 		{
+			//collider.OverlapPoint(eventData.pointerDrag.position
 			// GiveAmount.givenNumber += DragDrop.moneyNumber;
 			canvas.GetComponent<LevelManagement>().UpdateGiven(DragDrop.moneyNumber);
 			eventData.pointerDrag.GetComponent<DragDrop>().droppedOnSlot = true;

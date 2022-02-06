@@ -220,7 +220,7 @@ PrefabInstance:
     - target: {fileID: 2088932817771887178, guid: 9296aeab8be9f5d47b681c44ecb174c0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2088932817771887178, guid: 9296aeab8be9f5d47b681c44ecb174c0,
         type: 3}
@@ -1658,7 +1658,7 @@ RectTransform:
   - {fileID: 276684946}
   - {fileID: 488537268}
   m_Father: {fileID: 657826463}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -2112,9 +2112,9 @@ RectTransform:
   - {fileID: 1113816643}
   - {fileID: 2015846384}
   - {fileID: 1289981338}
-  - {fileID: 529302867}
   - {fileID: 778239694}
   - {fileID: 1641298946}
+  - {fileID: 529302867}
   m_Father: {fileID: 1487927939}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4525,6 +4525,7 @@ GameObject:
   - component: {fileID: 1678325325}
   - component: {fileID: 1678325324}
   - component: {fileID: 1678325326}
+  - component: {fileID: 1678325327}
   m_Layer: 9
   m_Name: CashReg
   m_TagString: Untagged
@@ -4601,6 +4602,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 657826466}
+  cashBox: {fileID: 1678325322}
+--- !u!61 &1678325327
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678325322}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 11.68335, y: 2.2163696}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 517.6583, y: 431.84692}
+  m_EdgeRadius: 0
 --- !u!1 &1684138990
 GameObject:
   m_ObjectHideFlags: 0
@@ -5902,7 +5930,7 @@ PrefabInstance:
     - target: {fileID: 6377828753750322096, guid: 6329f7137e61e214fa8386423e13b71f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6377828753750322096, guid: 6329f7137e61e214fa8386423e13b71f,
         type: 3}
