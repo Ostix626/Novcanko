@@ -1647,7 +1647,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 529302866}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1657,13 +1657,13 @@ RectTransform:
   - {fileID: 2005734119}
   - {fileID: 276684946}
   - {fileID: 488537268}
-  m_Father: {fileID: 657826463}
-  m_RootOrder: 15
+  m_Father: {fileID: 1866270542}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -3.5, y: 0.021972656}
-  m_SizeDelta: {x: 1080.4807, y: -0.05053711}
+  m_SizeDelta: {x: 0.4807129, y: -0.05053711}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &529302868
 MonoBehaviour:
@@ -2114,7 +2114,6 @@ RectTransform:
   - {fileID: 1289981338}
   - {fileID: 778239694}
   - {fileID: 1641298946}
-  - {fileID: 529302867}
   m_Father: {fileID: 1866270542}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5295,6 +5294,7 @@ RectTransform:
   m_Children:
   - {fileID: 1462324848}
   - {fileID: 657826463}
+  - {fileID: 529302867}
   m_Father: {fileID: 1487927939}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5359,7 +5359,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
