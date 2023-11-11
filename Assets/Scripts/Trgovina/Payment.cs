@@ -23,12 +23,12 @@ public class Payment : MonoBehaviour
                                     {1f, 0},
                                     {2f, 0},
                                     {5f, 0},
+                                    {5f, 0},
                                     {10f, 0},
                                     {20f, 0},
                                     {50f, 0},
                                     {100f, 0},
                                     {200f, 0},
-                                    {500f, 0},
                                     {1000f, 0},
                                 };
 
@@ -48,6 +48,8 @@ public class Payment : MonoBehaviour
             if (wallet.banknotes[i].quantity == 0) continue;
             novcanik[i + 9, 1] = wallet.banknotes[i].quantity;
         }
+        novcanik[8, 1] = 0;
+        novcanik[15, 1] = 0;
     }
 
     int sljedecaNiza(float ostatak)
@@ -158,7 +160,7 @@ public class Payment : MonoBehaviour
     public void MoneyChange(float o)
     {
         o = (float)Math.Round(o, 2);
-        ostatakTMPro.text = "Ostatak: " + Math.Abs(o).ToString() + " Kn";
+        ostatakTMPro.text = "Ostatak: " + Math.Abs(o).ToString() + " EUR";
     }
 
     public void Pay()

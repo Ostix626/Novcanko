@@ -10,19 +10,19 @@ public class GiveAmount : MonoBehaviour {
 
     void Start() {
     	amountNumber = r.Next(1, 100);
-    	amountTxt.text = "" + amountNumber + " kn";
+    	amountTxt.text = "" + amountNumber + " EUR";
     	//Debug.Log(amount_number);
     	givenNumber = 0;
     }
 
     public void Update() {
-    	givenTxt.text = "" + givenNumber + " kn";
+    	givenTxt.text = "" + givenNumber + " EUR";
         //Debug.Log("givenTxt = " + givenNumber);
         if (NextLvl.proceed) {
             givenNumber = 0;
-            givenTxt.text = "" + givenNumber + " kn";
+            givenTxt.text = "" + givenNumber + " EUR";
             amountNumber = r.Next(1, 100);
-            amountTxt.text = "" + amountNumber + " kn";
+            amountTxt.text = "" + amountNumber + " EUR";
             NextLvl.proceed = false;
         }
     }

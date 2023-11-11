@@ -15,7 +15,7 @@ public class TotalValue : MonoBehaviour
         wallet = JsonUtility.FromJson<Wallet>(jsonString);
         COINS_ITEMS = wallet.coins.Count;
         BANKNOTES_ITEMS = wallet.banknotes.Count;
-        total.text = "UKUPNO: " + GetTotalValue().ToString() + " kn";
+        total.text = "UKUPNO: " + GetTotalValue().ToString() + " EUR";
     }
 
     double GetTotalValue()

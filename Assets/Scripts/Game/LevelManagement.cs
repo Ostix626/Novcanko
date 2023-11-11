@@ -62,13 +62,13 @@ public class LevelManagement : MonoBehaviour
 		if (difficulty != "EasyGame") {
     		lipe.gameObject.SetActive(true);
 			amountNumber = Random.Range(1.2f, maximumPrice);
-			amountTxt.text = "Potrebno je platiti " + amountNumber.ToString("F2") + "kn";
+			amountTxt.text = "Potrebno je platiti " + amountNumber.ToString("F2") + " EUR";
 		}
 		//amountNumber = loadedLevels[currentLevel].goalAmount;
 		else
 		{
 			amountNumber = Random.Range(1, maximumPrice);
-			amountTxt.text = "Potrebno je platiti " + amountNumber.ToString() + "kn";
+			amountTxt.text = "Potrebno je platiti " + amountNumber.ToString() + " EUR";
 		}
 		UpdateGiven(-givenNumber);
 	}
@@ -77,9 +77,9 @@ public class LevelManagement : MonoBehaviour
     {
 		givenNumber += offset;
 		if (difficulty != "EasyGame") {
-			givenTxt.text = "Predao si " + givenNumber.ToString("F2") + "kn";
+			givenTxt.text = "Predao si " + givenNumber.ToString("F2") + " EUR";
 		} else {
-			givenTxt.text = "Predao si " + givenNumber.ToString() + "kn";
+			givenTxt.text = "Predao si " + givenNumber.ToString() + " EUR";
 		}
 	}
 

@@ -28,7 +28,7 @@ public class EditWalletItems : MonoBehaviour
     void SetCurrentItem(WalletItem walletItem, Sprite sprite)
     {
         walletItemPlaceholder.image.sprite = sprite;
-        description.text = walletItem.name + "\nUkupna vrijednost: " + (walletItem.quantity * walletItem.value).ToString() + " kn";
+        description.text = walletItem.name + "\nUkupna vrijednost: " + (walletItem.quantity * walletItem.value).ToString() + " EUR";
         quantityInput.text = walletItem.quantity.ToString();
     }
 

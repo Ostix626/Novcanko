@@ -576,7 +576,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Marina Banov\nLena Novak\nDominik Glava\u0161\nMartin Luk\n"
+  m_text: "Martin Luk\nMarina Banov\nLena Novak\nDominik Glava\u0161\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ceac338da6f13034ba9defb6fe197937, type: 2}
   m_sharedMaterial: {fileID: -4063558678131208952, guid: ceac338da6f13034ba9defb6fe197937,
@@ -830,6 +830,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 521325770100440253, guid: 8133adbe4a9d7d648bcbdbd1b59674f0,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 521325770100440253, guid: 8133adbe4a9d7d648bcbdbd1b59674f0,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 169.41379
       objectReference: {fileID: 0}
@@ -845,6 +850,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 521325770100440253, guid: 8133adbe4a9d7d648bcbdbd1b59674f0,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 521325770100440253, guid: 8133adbe4a9d7d648bcbdbd1b59674f0,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -857,16 +867,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 521325770100440253, guid: 8133adbe4a9d7d648bcbdbd1b59674f0,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 521325770100440253, guid: 8133adbe4a9d7d648bcbdbd1b59674f0,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 521325770100440253, guid: 8133adbe4a9d7d648bcbdbd1b59674f0,
         type: 3}

@@ -26,7 +26,7 @@ public class Trgovina : MonoBehaviour
         wallet = JsonUtility.FromJson<Wallet>(jsonString);
         COINS_ITEMS = wallet.coins.Count;
         BANKNOTES_ITEMS = wallet.banknotes.Count;
-        total.text = String.Format("U novčaniku:\n{0:0.00} kn", GetTotalValue());
+        total.text = String.Format("U novčaniku:\n{0:0.00} EUR", GetTotalValue());
     }
 
     void Update()

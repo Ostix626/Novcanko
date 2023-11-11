@@ -20,6 +20,7 @@ public class ListController : MonoBehaviour
             controller.quantity.text = "x" + wallet.banknotes[i].quantity.ToString();
             walletItem.transform.SetParent(ContentPanel.transform);
             walletItem.transform.localScale = new Vector3(3.5f, 3.5f, 3.5f);
+            controller.image.preserveAspect = true;
         }
         for (int i = 0; i < wallet.coins.Count; i++)
         {
@@ -28,8 +29,10 @@ public class ListController : MonoBehaviour
             ListItemController controller = walletItem.GetComponent<ListItemController>();
             controller.image.sprite = Resources.Load<Sprite>("Money/" + wallet.coins[i].imageAPath);
             controller.quantity.text = "x" + wallet.coins[i].quantity.ToString();
+            controller.quantity.fontSize = 50;
+            controller.image.preserveAspect = true;
             walletItem.transform.SetParent(ContentPanel.transform);
-            walletItem.transform.localScale = new Vector3(3.0f, 3.0f, 3.0f);
+            walletItem.transform.localScale = new Vector3(2.0f, 2.0f, 2.0f);
         }
     }
 }

@@ -189,7 +189,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: kn
+  m_text: EUR
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ceac338da6f13034ba9defb6fe197937, type: 2}
   m_sharedMaterial: {fileID: -4063558678131208952, guid: ceac338da6f13034ba9defb6fe197937,
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 122.65
+  m_fontSize: 76.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -482,7 +482,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "TE\u017DI ZADACI\n(S LIPAMA)"
+  m_text: "TE\u017DI ZADACI\n(S CENTIMA)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ceac338da6f13034ba9defb6fe197937, type: 2}
   m_sharedMaterial: {fileID: -4063558678131208952, guid: ceac338da6f13034ba9defb6fe197937,
